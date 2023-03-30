@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6d45661ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="upper-part">
+    <div id="header">
+       <div class="container">
+         <nav>
+            <img src="images/logo.PNG"class="logo">
+
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#project">portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fas fa-times"onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+         </nav>
+         <hr>
+         <div class="header-text">
+            <h1>Hi,I'm<span>Noor Saki</span><br><p> Front-End Developer</p></h1>
+         </div>
+       </div>
+       
+
+    </div>
+    <!--------------- About---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>I am an enterprising young, graduated from the field of Electrical and Electronic Engineering. I 
+                    think in terms of results and objectives, I am an enthusiastic individual with emotional 
+                    intelligence and I work with decisiveness and conviction. I have a proactive attitude and find 
+                    positive ways to stimulate and engage with people. I am pledged to implement my technical 
+                    know-how to achieve organizational goal. My aim is to establish myself as a true professional 
+                    individual and put my best effort to succeed.</P>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab"id="Skills">
+                        <ul>
+                            <li><span>Front-End</span><br> Web developer</li>
+                            <li><span>Web-Development</span><br> Web app development</li>
+                            <li><span>Programming Language</span><br> C/C++, Arduino, PLC </li>
+                            <li><span>Software Skills</span><br>Delta -V, MATLAB, AutoCAD, Orcad, PSpice, Proteus,<br>
+                                Microwind,DSCH 2,Quartas,MS Word, MS PowerPoint, MS Excel </li>
+                        </ul>
+                    </div>
+
+                
+                    <div class="tab-contents"id="Experience">
+                        <ul>
+                            <li><span>Turbine Control</span><br>  Control SGT-400 Turbine using Delta-V and HMI process in my 
+                                present job using Distributed Control System(DCS) method.</li>
+                            <li><span>Flow Control</span><br> Maintain a smooth flow of gas using Delta-V software and 
+                                DCS Control System</li>
+                            <li><span>Electric appliances</span><br> Maintain the Transformer and Gas Engine Generators and an 
+                                Emergency Diesel Engine Generator </li>
+                            <li><span>Field Skills</span><br>Experience on pipe fitting P&ID, Process work system in my relevant job 
+                                field. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="Education">
+                        <ul>
+                            <li><span>Secondary School Certificate </span><br>Subject : Science
+                            <br> school:Zia Sar Karkhana College <br>Passing Year:2010<br>Gpa: A+(in all subjects)</li>
+                            <li><span>Higher Secondary School Certificate</span><br> Subject : Science
+                                <br> college:Queen's College <br>Passing Year:2012<br>Gpa: A+(in all subjects)</li>
+                            <li><span>University</span><br> Subject : Electrical and 
+                                Electronic Engineering
+                                
+                                <br> College:Ahsanullah University of 
+                                Science and Technology <br>Passing Year:2017<br>Cgpa:3.34(out of 4.00)</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Services--------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nobis perspiciatis non perferendis possimus quas.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nobis perspiciatis non perferendis possimus quas.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Front-End</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nobis perspiciatis non perferendis possimus quas.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- project -->
+<section id="project">
+    <h2>My Works</h2>
+    <div class="container">
+      <div class="project_container">
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project7.png" alt="Project 7" />
+            <div class="card_content">
+              <h3>Youtube Clone</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project2.png" alt="Project 2" />
+            <div class="card_content">
+              <h3>Job Application</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project5.png" alt="Project 5" />
+            <div class="card_content">
+              <h3>Restaurant Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project4.png" alt="Project 4" />
+            <div class="card_content">
+              <h3>Landing Page</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project3.png" alt="Project 3" />
+            <div class="card_content">
+              <h3>Parallax Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project6.png" alt="Project 6" />
+            <div class="card_content">
+              <h3>Music Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project1.png" alt="Project 1" />
+            <div class="card_content">
+              <h3>Tribute Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project8.png" alt="Project 8" />
+            <div class="card_content">
+              <h3>Documentation </h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid_item">
+          <div class="card">
+            <img src="images/project9.png" alt="Project 9" />
+            <div class="card_content">
+              <h3>Blog Website</h3>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="btn-div"><a href="#" class="btn">See More</a></div>
+    </div>
+  </section>
+  
+ 
+  <!-- contact -->
+
+  <div id="contact">
+    <div class="container-con">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i>nasaki089@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>+8801935173860</p>
+          <div class="social-icons">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/My Cv.pdf"download class="btn btn2">Download Cv</a>
+
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name"required>
+            <input type="email"name="email" placeholder="Your Email"required>
+            <textarea name="Message"rows="6"placeholder="Your Message"></textarea>
+            <button type="submit"class="btn btn2 ">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+   
+</script>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu(){
+  sidemeu.style.right = "0";
+  }
+  function closemenu(){
+  sidemeu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbwpzKcMPBPIdec5A0YeubxNSAW_EmNbeYQ9lSmVVKpETjUW_treQmOzNBqkMkzQNDW-Tw/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
